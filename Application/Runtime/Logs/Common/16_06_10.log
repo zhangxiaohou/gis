@@ -40,3 +40,225 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001351s ]
 ERR: 无法加载模块:Application
 
+[ 2016-06-10T17:52:45+08:00 ] ::1 /gis/Application/Home/View/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000933s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T17:56:37+08:00 ] ::1 /gis/Application/Home/View/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001126s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T17:57:10+08:00 ] ::1 /gis/Application/Home/View/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001990s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T17:57:22+08:00 ] ::1 /gis/Application/Home/View/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003287s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:13:02+08:00 ] ::1 /gis/Application/Home/View/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001702s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:13:15+08:00 ] ::1 /gis/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+ERR: 无法加载模块:Login
+
+[ 2016-06-10T18:13:22+08:00 ] ::1 /gis/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+ERR: 无法加载模块:Index
+
+[ 2016-06-10T18:14:10+08:00 ] ::1 /gis/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+ERR: 无法加载模块:Index
+
+[ 2016-06-10T18:14:13+08:00 ] ::1 /gis/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+ERR: 无法加载模块:Index
+
+[ 2016-06-10T18:14:17+08:00 ] ::1 /gis/Application/Home/View/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001194s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:14:29+08:00 ] ::1 /gis/Application/Home/View/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001266s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:14:31+08:00 ] ::1 /gis/Application/Home/View/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:25:11+08:00 ] ::1 /gis/Application/Home/View/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:28:06+08:00 ] ::1 /gis/Application/Home/View/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:28:17+08:00 ] ::1 /gis/Application/Home/View/Public/img/login/puff.svg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:28:17+08:00 ] ::1 /gis/Application/Home/View/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001039s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:28:30+08:00 ] ::1 /gis/Application/Home/View/Public/img/login/puff.svg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:28:30+08:00 ] ::1 /gis/Application/Home/View/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001294s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:32:31+08:00 ] ::1 /gis/Application/Home/View/Public/img/login/puff.svg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002166s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:32:31+08:00 ] ::1 /gis/Application/Home/View/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000793s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:32:37+08:00 ] ::1 /gis/Application/Home/View/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002050s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:35:18+08:00 ] ::1 /gis/Application/Home/View/Public/img/login/puff.svg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:35:18+08:00 ] ::1 /gis/Application/Home/View/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000752s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:36:17+08:00 ] ::1 /gis/Application/Home/View/Public/img/login/puff.svg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:36:17+08:00 ] ::1 /gis/Application/Home/View/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:37:01+08:00 ] ::1 /gis/Application/Home/View/Public/img/user_icon_copy.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000636s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001315s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:37:01+08:00 ] ::1 /gis/Application/Home/View/Public/img/login/puff.svg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000283s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001515s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:37:01+08:00 ] ::1 /gis/Application/Home/View/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:37:11+08:00 ] ::1 /gis/Application/Home/View/Public/img/login/puff.svg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:37:11+08:00 ] ::1 /gis/Application/Home/View/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:37:55+08:00 ] ::1 /gis/Application/Home/View/Public/img/login/puff.svg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:37:55+08:00 ] ::1 /gis/Application/Home/View/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:38:17+08:00 ] ::1 /gis/Application/Home/View/Public/img/login/puff.svg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:38:17+08:00 ] ::1 /gis/Application/Home/View/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:38:59+08:00 ] ::1 /gis/Application/Home/View/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004460s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:39:05+08:00 ] ::1 /gis/Application/Home/View/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+ERR: 无法加载模块:Application
+
+[ 2016-06-10T18:39:16+08:00 ] ::1 /gis/Application/Home/View/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000818s ]
+ERR: 无法加载模块:Application
+

@@ -1,11 +1,13 @@
 <?php
 namespace Home\Controller;
-use Think\Controller;
-class IndexController extends Controller {
-    public function index(){
-        $model = M("user");
-        $name = $model -> select();
+use Home\Controller\GisController;
 
+class IndexController extends GisController {
+    public function __construct(){
+        parent::__construct();
+    }
+
+    public function index(){
         $this -> display("index");
      }
 }
