@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30292166-4931-47fd-8e38-c83aac5b9ff4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Public/css/chat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Public/js/chat.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/GameController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/GameController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Public/css/indexCss.css" afterPath="$PROJECT_DIR$/Application/Home/View/Public/css/indexCss.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/common/header.html" afterPath="$PROJECT_DIR$/Application/Home/View/common/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/game/index.html" afterPath="$PROJECT_DIR$/Application/Home/View/game/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/index/index.html" afterPath="$PROJECT_DIR$/Application/Home/View/index/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/login/login.html" afterPath="$PROJECT_DIR$/Application/Home/View/login/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/50c9f5d2ef37c2cf131d5cf1381d3a4b.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/50c9f5d2ef37c2cf131d5cf1381d3a4b.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/9b4ac15774870dbabc3db513ede28689.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/9b4ac15774870dbabc3db513ede28689.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Common/16_07_07.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Common/16_07_07.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/16_07_07.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/16_07_07.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="ppp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,22 +28,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="IndexController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Home/View/login/login.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-300">
               <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -182,6 +173,7 @@
         <option value="$PROJECT_DIR$/Application/Home/View/Public/css/chat.css" />
         <option value="$PROJECT_DIR$/Application/Home/View/game/index.html" />
         <option value="$PROJECT_DIR$/Application/Home/View/Public/js/chat.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -761,12 +753,12 @@
       <workItem from="1465837189626" duration="1220000" />
       <workItem from="1466091061666" duration="7317000" />
       <workItem from="1467434721014" duration="4586000" />
-      <workItem from="1467793417094" duration="13333000" />
+      <workItem from="1467793417094" duration="13443000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41692000" />
+    <option name="totallyTimeSpent" value="41802000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="73" width="1440" height="824" extended-state="0" />
@@ -809,7 +801,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lankoyCMS/Runtime/Cache/Home/3b17421d96390eb00cb764c09652da08.php" />
     <entry file="file://$PROJECT_DIR$/lankoyCMS/Home/View/ppp/Public/js/common.js" />
     <entry file="file://$PROJECT_DIR$/lankoyCMS/Common/Conf/config.php" />
     <entry file="file://$PROJECT_DIR$/lankoyCMS/Home/View/ppp/Public/js/s30.js" />
@@ -1068,6 +1059,17 @@
         <state relative-caret-position="-300">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

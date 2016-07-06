@@ -20260,3 +20260,21 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003926s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.004077s ]
 ERR: 非法操作:chat
 
+[ 2016-07-07T02:07:06+08:00 ] ::1 /gis/Home/game/chat?id=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003996s ]
+ERR: 非法操作:chat
+
+[ 2016-07-07T02:07:57+08:00 ] ::1 /gis/Home/game/chat?id=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003983s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004324s ]
+ERR: 非法操作:chat
+
