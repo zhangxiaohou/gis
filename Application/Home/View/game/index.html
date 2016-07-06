@@ -1,24 +1,21 @@
 
-
+<link  href="__CSS__/bootstrap.min.css" type="text/css"  rel="stylesheet" />
+<link  href="__CSS__/chat.css" type="text/css"  rel="stylesheet" />
 <style>
     .main{background:url(__IMG__/indexImg/bg.png);}
-    #container{
-        height:1000px;
-        width:1000px;
-    }
+    #container{height:80%}
 </style>
 </head>
 <body class="main">
-<div class="container" style="height: 100%">
-        <if condition="$leader == 1">
+<div  style="height: 100%">
+        <if condition="1 == 1">
             <div id="container"></div>
-            <script type="text/javascript">
-                var map = new BMap.Map("container");//在container容器中创建一个地图,参数container为div的id属性;
-                var point = new BMap.Point(116.404, 39.915);//定位
-                map.centerAndZoom(point,15);				//将point移到浏览器中心，并且地图大小调整为15;
 
-                <!--以后只需要在此处添加代码即可-->
-            </script>
+            <script src="__JS__/chat.js"></script>
+            <div class="divchat" id="chatArea"></div>
+            <div class="infoDiv" id="infoArea">
+                开始地点坐标:<span id="startPoint">(0,0)</span>
+            </div>
             <else/>
             <script>
                 $(function(){

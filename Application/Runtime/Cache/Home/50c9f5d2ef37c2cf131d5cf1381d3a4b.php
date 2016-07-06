@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
     <title>gis</title>
-    <script type="text/javascript" name="baidu-tc-cerfication" data-appid="8283716" src="http://apps.bdimg.com/cloudaapi/lightapp.js"></script>
-
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=uoe6xXST66ou1s1fUITaH5iGel4FitgN">
+    </script>
     <link  href="/gis/Application/Home/View/Public/css/toastmessage.css" type="text/css"  rel="stylesheet" />
-    <link  href="/gis/Application/Home/View/Public/css/bootstrap.min.css" type="text/css"  rel="stylesheet" />
+    <link type="text/css" href="/gis/Application/Home/View/Public/css/indexCss.css" rel="stylesheet" />
 
 
      <script src="/gis/Application/Home/View/Public/js/jquery.min.js"></script>
@@ -112,17 +112,24 @@
 		        type:'post',
 		        success:function(data){
                 console.log(data);
-                if(data != "0"){
-                  $('.login').removeClass('test');
-                  $('.login div').fadeOut(123);
-                  $('.success').fadeIn();
-                  setTimeout(function () {
-                    location.href = data;
-                  }, 1000);
-                }else{
+                if(data == "0"){
                     touming("您的昵称在该房间内已存在");
                     setTimeout(function () {
-                      location.reload();
+                        location.reload();
+                    }, 1000);
+                }else if(data == "1"){
+                    touming("您选择的房间游戏已开始");
+                    setTimeout(function () {
+                       location.reload();
+                    }, 1000);
+                }
+                else{
+
+                    $('.login').removeClass('test');
+                    $('.login div').fadeOut(123);
+                    $('.success').fadeIn();
+                    setTimeout(function () {
+                        location.href = data;
                     }, 1000);
                 }
 

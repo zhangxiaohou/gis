@@ -9,6 +9,7 @@ class GameController extends GisController {
 
     public function index(){
         if(session("?leader")) $this -> assign('leader',1);
+        
         $this -> display("index");
      }
 }

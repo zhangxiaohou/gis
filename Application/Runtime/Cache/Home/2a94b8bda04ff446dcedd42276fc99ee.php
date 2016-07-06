@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
     <title>gis</title>
-    <script type="text/javascript" name="baidu-tc-cerfication" data-appid="8283716" src="http://apps.bdimg.com/cloudaapi/lightapp.js"></script>
-
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=uoe6xXST66ou1s1fUITaH5iGel4FitgN">
+    </script>
     <link  href="/gis/Application/Home/View/Public/css/toastmessage.css" type="text/css"  rel="stylesheet" />
-    <link  href="/gis/Application/Home/View/Public/css/bootstrap.min.css" type="text/css"  rel="stylesheet" />
     <link type="text/css" href="/gis/Application/Home/View/Public/css/indexCss.css" rel="stylesheet" />
 
 
@@ -17,6 +16,7 @@
 
 
 
+<link  href="/gis/Application/Home/View/Public/css/bootstrap.min.css" type="text/css"  rel="stylesheet" />
 <link type="text/css" href="/gis/Application/Home/View/Public/css/indexCss.css" rel="stylesheet" />
 <style>
     .main{background:url(/gis/Application/Home/View/Public/img/indexImg/bg.png); width:100%; text-align:center; margin-left:auto; margin-right:auto; bottom:0px; overflow:hidden; }
@@ -33,7 +33,7 @@
             <td >蓝方
             </td>
         </tr>
-        <?php $__FOR_START_1716166096__=0;$__FOR_END_1716166096__=5;for($i=$__FOR_START_1716166096__;$i < $__FOR_END_1716166096__;$i+=1){ ?><tr class="team">
+        <?php $__FOR_START_1036509514__=0;$__FOR_END_1036509514__=5;for($i=$__FOR_START_1036509514__;$i < $__FOR_END_1036509514__;$i+=1){ ?><tr class="team">
                 <td class="red">
                    &nbsp; <?php if($red[$i]): echo ($red[$i][name]); endif; ?>
                 </td>

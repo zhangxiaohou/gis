@@ -1,14 +1,10 @@
 @charset "utf-8";
 *{ margin:0; padding:0; list-style:none;}
-	input[type="button"], 
-	input[type="submit"], 
-	input[type="reset"] 
-	{
-	-webkit-appearance: none;}
+
 a{ text-decoration:none;color:#fff;}
 a:hover{text-decoration:none;color:#fff;}
 a,img{border:0;} 	
-.body,html{ height:100%;}
+body,html{ height:100%;}
 .main_1{color:#FFF; width:100%; text-align:center; margin-left:auto; margin-right:auto; bottom:0px; overflow:hidden;padding-top:10px; font-family:'微软雅黑'; font-size:24px;}
 .t1{ width:100%; text-align:center; margin:0px auto; margin-top:50px;}
 .t2{ width:100%; text-align:center; margin:0px auto;}

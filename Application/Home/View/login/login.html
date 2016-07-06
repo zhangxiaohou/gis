@@ -101,14 +101,21 @@
                     setTimeout(function () {
                         location.reload();
                     }, 1000);
-                                               }{
-                  $('.login').removeClass('test');
-                  $('.login div').fadeOut(123);
-                  $('.success').fadeIn();
-                  setTimeout(function () {
-                    location.href = data;
-                  }, 1000);
-                }else
+                }else if(data == "1"){
+                    touming("您选择的房间游戏已开始");
+                    setTimeout(function () {
+                       location.reload();
+                    }, 1000);
+                }
+                else{
+
+                    $('.login').removeClass('test');
+                    $('.login div').fadeOut(123);
+                    $('.success').fadeIn();
+                    setTimeout(function () {
+                        location.href = data;
+                    }, 1000);
+                }
 
 		        }
 	      });

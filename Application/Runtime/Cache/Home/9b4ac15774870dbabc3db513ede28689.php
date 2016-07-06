@@ -7,7 +7,6 @@
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=uoe6xXST66ou1s1fUITaH5iGel4FitgN">
     </script>
     <link  href="/gis/Application/Home/View/Public/css/toastmessage.css" type="text/css"  rel="stylesheet" />
-    <link  href="/gis/Application/Home/View/Public/css/bootstrap.min.css" type="text/css"  rel="stylesheet" />
     <link type="text/css" href="/gis/Application/Home/View/Public/css/indexCss.css" rel="stylesheet" />
 
 
@@ -16,25 +15,22 @@
     <script src="/gis/Application/Home/View/Public/js/toastmessage.js"></script>
 
 
-
+<link  href="/gis/Application/Home/View/Public/css/bootstrap.min.css" type="text/css"  rel="stylesheet" />
+<link  href="/gis/Application/Home/View/Public/css/chat.css" type="text/css"  rel="stylesheet" />
 <style>
     .main{background:url(/gis/Application/Home/View/Public/img/indexImg/bg.png);}
-    #container{
-        height:1000px;
-        width:1000px;
-    }
+    #container{height:80%}
 </style>
 </head>
 <body class="main">
-<div class="container" style="height: 100%">
-        <?php if($leader == 1): ?><div id="container"></div>
-            <script type="text/javascript">
-                var map = new BMap.Map("container");//在container容器中创建一个地图,参数container为div的id属性;
-                var point = new BMap.Point(116.404, 39.915);//定位
-                map.centerAndZoom(point,15);				//将point移到浏览器中心，并且地图大小调整为15;
+<div  style="height: 100%">
+        <?php if(1 == 1): ?><div id="container"></div>
 
-                <!--以后只需要在此处添加代码即可-->
-            </script>
+            <script src="/gis/Application/Home/View/Public/js/chat.js"></script>
+            <div class="divchat" id="chatArea"></div>
+            <div class="infoDiv" id="infoArea">
+                开始地点坐标:<span id="startPoint">(0,0)</span>
+            </div>
             <?php else: ?>
             <script>
                 $(function(){
