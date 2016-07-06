@@ -133,13 +133,14 @@
 
 })(jQuery);
 var toumingFlag=true;
-function touming(text){
+function touming(text,sticky){
+    if(!sticky){sticky = false;}
     if(toumingFlag){
         toumingFlag=false;
         $().toastmessage('showToast', {
             stayTime : 1000,
             text     : text,
-            sticky   : false,
+            sticky   : sticky,
             position : 'middle-center',
             close :function(){
                 toumingFlag=true;

@@ -7,6 +7,8 @@
     <script type="text/javascript" name="baidu-tc-cerfication" data-appid="8283716" src="http://apps.bdimg.com/cloudaapi/lightapp.js"></script>
 
     <link  href="/gis/Application/Home/View/Public/css/toastmessage.css" type="text/css"  rel="stylesheet" />
+    <link  href="/gis/Application/Home/View/Public/css/bootstrap.min.css" type="text/css"  rel="stylesheet" />
+    <link type="text/css" href="/gis/Application/Home/View/Public/css/indexCss.css" rel="stylesheet" />
 
 
      <script src="/gis/Application/Home/View/Public/js/jquery.min.js"></script>
@@ -23,31 +25,99 @@
 <body class="main">
 
 <div class="t1">
-    <table width="100%" cellpadding="0" cellspacing="0">
-        <tr><td align="center"><a href="cz_sj.html"><img src="/gis/Application/Home/View/Public/img/indexImg/t1.png" width="150" height="auto"/></a></td></tr>
-        <tr><td class="tds" align="center"><a href="cz_sj.html">虫子手机</a></td></tr>
-    </table>
+    <span class="qp">房主:<?php echo ($leader["name"]); ?></span>
+    <table border="1" width="50%" cellpadding="0" cellspacing="0" class="main_1">
+        <tr >
+            <td >红方
+            </td>
+            <td >蓝方
+            </td>
+        </tr>
+        <?php $__FOR_START_1716166096__=0;$__FOR_END_1716166096__=5;for($i=$__FOR_START_1716166096__;$i < $__FOR_END_1716166096__;$i+=1){ ?><tr class="team">
+                <td class="red">
+                   &nbsp; <?php if($red[$i]): echo ($red[$i][name]); endif; ?>
+                </td>
+                <td class="blue">
+                    &nbsp;  <?php if(isset($blue[$i])): echo ($blue[$i][name]); endif; ?>
+                </td>
+            </tr><?php } ?>
+        <tr ><td colspan="2">未选择队伍的成员:
+            <span class="oth"><?php if(is_array($oth)): foreach($oth as $key=>$vo): echo ($vo["name"]); ?>&nbsp;&nbsp;&nbsp;<?php endforeach; endif; ?>
+            </span>
+        </td></tr>
+        <tr >
+            <td ><button class="btn-danger" onclick="joinTeam(1);">加入红队</button>
+            </td>
+            <td ><button class="btn-info" onclick="joinTeam(2);">加入蓝队</button>
+            </td>
+        </tr>
+        <?php if(session('id') == $leader['id']): ?><tr >
+                <td colspan="2">
+                    <button class="btn-success" onclick="start();">开始游戏</button>
+                </td>
+            </tr><?php endif; ?>
+            </table>
+    </div>
 </div>
-<div class="t2">
-    <div class="t21">
-        <table width="100%" cellpadding="0" cellspacing="0">
-            <tr><td align="center"><a href="gwc.html"><img src="/gis/Application/Home/View/Public/img/indexImg/1.png" width="80" height="auto"/></a></td></tr>
-            <tr><td class="tds" align="center"><a href="gwc.html">团购</a></td></tr>
-        </table>
-    </div>
-    <div class="t21">
-        <table width="100%" cellpadding="0" cellspacing="0">
-            <tr><td align="center"><a href="login.html"><img src="/gis/Application/Home/View/Public/img/indexImg/2.png" width="80" height="auto"/></a></td></tr>
-            <tr><td class="tds" align="center"><a href="login.html">限时抢拍</a></td></tr>
-        </table>
-    </div>
-    <div class="t21">
-        <table width="100%" cellpadding="0" cellspacing="0">
-            <tr><td align="center"><a href="register.html"><img src="/gis/Application/Home/View/Public/img/indexImg/3.png" width="80" height="auto"/></a></td></tr>
-            <tr><td class="tds" align="center"><a href="register.html">虫子配件</a></td></tr>
-        </table>
-    </div>
-</div>
+<script>
+    $(function(){
+        setInterval(function(){
+            refreshTeam();
+        },1000);
+    })
+    function joinTeam(team){
+        $.ajax({
+            url:'joinTeam',
+            data:{
+                team:team
+            },
+            success:function(data){
+                refreshTeam();
+            }
+        });
+    }
+    function refreshTeam(){
+        $.ajax({
+            url:'refreshTeam',
+            success:function(data){
+                if(data === "1"){
+                    location.href = "<?php echo U('game/index');?>";
+                }
+                data = JSON.parse(data);
+                var red = $(".red");
+                red.html("&nbsp;");
+                var blue = $(".blue");
+                blue.html("&nbsp;");
+                var redIndx = 0;
+                var blueIndx = 0;
+                $(".oth").text(" ");
+                $.each(data,function(index,value){
+                    if(value.team == 1){
+                        red.eq(redIndx).text(value.name);
+                        redIndx ++;
+                    }else if(value.team == 2){
+                        blue.eq(blueIndx).text(value.name);
+                        blueIndx ++;
+                    }else{
+                        $(".oth").html( $(".oth").text() + value.name + "&nbsp;&nbsp;&nbsp;");
+                    }
+                })
+            }
+        });
+    }
+    function start(){
+        $.ajax({
+            url:'start',
+            success:function(data) {
+                data = JSON.parse(data);
+                if(data[8] == 0){
+                    touming(data['info']);
+                }
+                location.href = "<?php echo U('game/index');?>";
+            }
+        });
+    }
+</script>
 
 </body>
 </html>

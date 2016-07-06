@@ -96,19 +96,19 @@
 		        type:'post',
 		        success:function(data){
                 console.log(data);
-                if(data != "0"){
+                if(data == "0"){
+                    touming("您的昵称在该房间内已存在");
+                    setTimeout(function () {
+                        location.reload();
+                    }, 1000);
+                                               }{
                   $('.login').removeClass('test');
                   $('.login div').fadeOut(123);
                   $('.success').fadeIn();
                   setTimeout(function () {
                     location.href = data;
                   }, 1000);
-                }else{
-                    touming("您的昵称在该房间内已存在");
-                    setTimeout(function () {
-                      location.reload();
-                    }, 1000);
-                }
+                }else
 
 		        }
 	      });

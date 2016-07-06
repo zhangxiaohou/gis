@@ -25,18 +25,28 @@ class LoginController extends Controller {
             $checkName['name'] = $name;
             if($model -> where($checkName) -> find()){
                 echo 0;
+            }elseif($data['status'] > 0) {
+                echo 1;
             }else{
                 $newMem['rid'] = $rid;
                 $newMem['name'] = $name;
                 $model -> add($newMem);
                 session('rid',I("post.roomId"));
+                $where['name'] = $name;
+                $data = $model -> where($where) -> find();
+                session('id',$data['id']);
                 echo U("index/index");
             }
         }else{
             $newMem['rid'] = $rid;
             $newMem['name'] = $name;
+            $newMem['leader'] = 1;
             $model -> add($newMem);
+            $where['name'] = $name;
+            $data = $model -> where($where) -> find();
+            session('id',$data['id']);
             session('rid',I("post.roomId"));
+            session('leader',1);
             echo U("index/index");
         }
     }

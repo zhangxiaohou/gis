@@ -7,6 +7,7 @@
     <script type="text/javascript" name="baidu-tc-cerfication" data-appid="8283716" src="http://apps.bdimg.com/cloudaapi/lightapp.js"></script>
 
     <link  href="/gis/Application/Home/View/Public/css/toastmessage.css" type="text/css"  rel="stylesheet" />
+    <link  href="/gis/Application/Home/View/Public/css/bootstrap.min.css" type="text/css"  rel="stylesheet" />
 
 
      <script src="/gis/Application/Home/View/Public/js/jquery.min.js"></script>
