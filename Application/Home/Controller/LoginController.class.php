@@ -50,4 +50,34 @@ class LoginController extends Controller {
             echo U("index/index");
         }
     }
+    function reLogin(){
+        $rid = I('post.roomId');
+        $name = I('post.name');
+
+        $model = M('user');
+
+        $where['rid'] = $rid;
+        if($data = $model -> where($where) -> select()){
+            $flag = false;
+            foreach ($data as $k => $v){
+                if($v["name"] == $name){
+                    $flag = true;
+                    session('id',$v['id']);
+                    session('rid',$rid);
+                    break;
+                }
+            }
+            if($flag){
+                echo U("index/index");
+
+            }else{
+                echo 0;
+            }
+        }else{
+            echo 1;
+        }
+    }
+    function chat(){
+
+    }
 }

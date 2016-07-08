@@ -1,0 +1,248 @@
+ /*新版浏览页下载*/
+   .w1200{ width: 1200px;margin:0 auto;}
+   .w650{ width: 650px; margin: 0 auto;}
+   .w325{width:325px;margin:0 auto;}
+   #wrap{min-width:1200px;height:auto;background:#f9f9f9;}   
+   #wrap #wrapBox {width:1200px;height:auto;}
+   #wrap .currentPostion{font-size:14px;line-height:56px;height:56px;width:1200px;}
+   #wrap .picinfo{width:1200px;height:auto;font-family:'微软雅黑';}
+   .viewbox{width:1200px;height:auto;}
+   #wrap .boxleft{width:808px;height:auto;background:white;border: 1px #f1f1f1 solid;box-shadow:0 0 3px rgba(0,0,0,.1)}
+   #wrap .boxright{width:375px;height:auto;background:white;margin-left:10px;border: 1px #f1f1f1 solid;box-shadow:0 0 3px rgba(0,0,0,.1)}
+   #wrap .boxleft .picTitle{width:650px;height:87px;color:black;font-size:14px;}
+   #wrap .boxleft .picTitle .picname{width:410px;margin-left:5px;line-height:87px;font-size:16px;font-weight:bold;display:block-inline;height:87px;overflow:hidden;
+    word-break:keep-all;white-space:nowrap;text-overflow:ellipsis;}
+   #wrap .boxleft .picTitle .findpic{color:#555555;width:103px;display:block;height:38px;border:1px solid #dcdcdc;text-align:center;line-height:40px;margin-top:23px;margin-left:17px;}
+   #wrap .boxleft .picTitle .findpic:hover{color:#3AA631;border:1px solid #3AA631;}
+   #wrap .boxleft .picTitle .findwe{width:103px;display:block;height:38px;border:1px solid #dcdcdc;text-align:center;margin-top:23px;color:#555555;line-height:40px;}
+   #wrap .boxleft .picTitle .findwe:hover{color:#3AA631;border:1px solid #3AA631;}
+   #wrap .boxleft .picTitle .findwe span i{padding-left: 10px;font-weight:bold;font-family: "宋体";;padding-top:1px;font-style: normal;font-size:16px;}
+
+   #wrap .boxleft .picBox{width:650px;height:auto;}
+   #anchor_left,#anchor_right{position:absolute;height:99999px;z-index:10;}
+   #wrap .boxleft .pic_keyword{width:650px;margin-top:60px;margin-bottom:60px;color:#8d8d8d;font-size:'微软雅黑';}
+   #wrap .boxleft .pic_keyword a{line-height:30px;font-size:14px;color:#8d8d8d;}
+   #wrap .boxleft .pic_keyword a:hover{color:#3AA631;}
+   #wrap .boxleft .pic_keyword .alink_pickeyword{line-height:30px;font-size:14px;color:#8d8d8d}
+   #wrap .boxleft .pic_keyword span{line-height:30px;font-size:14px;color:#8d8d8d}
+
+
+   .boxright .userclass{margin-top:35px;font-size:14px;color:#555555;}
+   .boxright .userclass .chongzhi{color:#278d06;}
+   .boxright .userclass .chongzhi:hover{color:#3AA631;}
+   .boxright .addiscount{margin-top:17px;font-family:'微软雅黑';line-height:25px;height:25px;}
+   .boxright .reddiscount{width:80px;height:25px;line-height:25px;background:red;color:#fff;text-align:center;font-size:14px;}
+   .boxright .reddiscountzi{color:red;height:25px;line-height:25px;width:100px;}
+   .boxright .greendiscount{background:url('http://icon.ooopic.com/2015/image/newweil/weili_rewrite.png') no-repeat -89px -28px;padding-left:20px;padding-right:20px;width:80px;color:#278d06;}
+   .boxright .greendiscount:hover{color:#3AA631;} 
+   .boxright .banquan{color:#555555;}
+   .boxright .zheikoujia{margin-top:20px;}
+   .boxright .down-btn-buyche{margin-top:28px; width:325px;height:50px;line-height:48px;}
+   .bt_download{height: 48px; color:white; line-height:48px; border: 1px solid #179305; width: 181px; text-indent:0px; display: block;font-size:18px;background:#090;}
+   .bt_download span{color:white;}
+   .bt_download .logodown{display:block;width:60px;height:48px;background:url('http://icon.ooopic.com/2015/image/newweil/weili_rewrite.png') no-repeat -4px -9px;}
+   .bt_download .logodown:hover{display:block;width:60px;height:48px;background:url('http://icon.ooopic.com/2015/image/newweil/weili_rewrite.png') no-repeat -4px -9px;}
+   .bt_download .logowen{display:block;width:121px;height:48px;)}
+   .bt_download:hover, .bt_download span:hover{color:white;background:#3AA631;}
+   .bt_che{background:#fec200;border: 1px solid #ebaa10;color:white; font-size:18px; cursor: pointer; width: 131px;display: block;height: 48px;line-height:48px;text-align: center;}
+   .bt_che:hover{background:#ffcc32;color:white;text-decoration:none;}
+   .boxright .downshare{height:66px;width:325px;}
+   .boxright .downshare #dynamicInfo{width:325px;float:left;margin-top:18px;margin-bottom:30px;}
+   .boxright .downshare .load{width:325px;float:left;margin-top:18px;margin-bottom:30px;}
+   .boxright .zhenban{width:325px;height:77px;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;font-size:14px;}
+   .bz_zhengban,.bz_tuikuan,.bz_shouhou{float:left;margin:15px 24px 0 15px;display:inline}
+   .bz_zhengban{width:56px;}
+   .bz_tuikuan{width:94px;}
+   .bz_shouhou{width:57px;}
+   .bz_zhengban_bg,.bz_tuikuan_bg,.bz_shouhou_bg{width:25px;height:30px;margin:0 auto;}
+   .bz_zhengban_bg{background:url("http://icon.ooopic.com/2015/image/newweil/weili_rewrite.png") no-repeat  -30px -83px;}
+   .bz_tuikuan_bg{background:url("http://icon.ooopic.com/2015/image/newweil/weili_rewrite.png") no-repeat  -89px -83px;}
+   .bz_shouhou_bg{background:url("http://icon.ooopic.com/2015/image/newweil/weili_rewrite.png") no-repeat  -149px -83px;}
+   .boxright .pic_box{width:325px;height:auto;}
+   .boxright .pic_xx{height:72px;width:325px;line-height:72px;font-size:18px;}
+   .boxright .pic_info{width:325px;height:auto;} 
+   .boxright .pic_info li{width:325px;height:22px;margin-bottom:10px;overflow:hidden;font-size:14px;display:block;} 
+   .boxright .ico_dujia{position:relative;padding-right:5px;padding-left:5px;padding-top:2px;padding-bottom:2px;text-align:center;color:white;background:#ff6633;border-radius:10px;line-height:19px;font-size:12px;}
+   .boxright .author{width:325px;height:100px;border-top:1px solid #e5e5e5;font-size:14px;margin-top:10px;}
+   .boxright .author .desgin_info{width:325px;height:49px;margin-top:38px;}
+   .boxright .author .desgin_info .desgin_face{width:76px;height:49px;}
+   .boxright .author .desgin_info .desgin_name{width:249px;height:49px;}
+   .boxright .author .desgin_info .desgin_name .gototuku{display:block;width:249px;height:24px;margin-top:10px;color:#090;}
+   .boxright .author .desgin_info .desgin_name .gototuku:hover{color:#3AA631;}
+   .boxright .fenxiang{width:325px;height:65px;border-bottom:1px solid #e5e5e5;}
+   .boxright .zhuanti{width:325px;min-height:45px;}
+    #pic_fav{margin-left:10px;}
+    #pic_fav:hover{cursor:pointer;text-decoration:underline;}
+    #dynamicInfo{font-size:14px;}
+
+ /*加入购车相关样式*/
+    #tipBox {left: 100px;position: absolute;top: 20px;z-index: 999;}
+   .tipBox_relate {background-color: #fff;border: 1px solid #dfdfdf;border-radius: 2px;box-shadow: 1px 1px 2px #dfdfdf;padding: 5px 5px 5px 8px;position: relative; width: 195px;}
+   .tipBox_relate p {line-height: 22px;}
+   .tipBox_sj {background: rgba(0, 0, 0, 0) url("http://icon.ooopic.com/image/2013/33_07.png") no-repeat scroll 0 0;bottom: -11px;height: 11px;position: absolute;right: 20px;width: 19px;}
+   .ok {background: rgba(0, 0, 0, 0) url("http://icon.ooopic.com/image/2013/ok.png") no-repeat scroll left center;height: 50px; padding-left: 40px;}
+   .ok_1 { font-size: 18px;}
+   .ok_2 {font-size: 13px;}
+
+   /*加载视频*/
+  .weili_13{background:url("http://icon.ooopic.com/image/2013/swf_bg.jpg") no-repeat;font-size:32px;font-weight:bold;font-family:Georgia, "Times New Roman", Times, serif;line-height:720px;height:650px;text-align:center;}
+  .dis_n{display:none}
+  #loader{width:0;height:0}
+  #pic_first{width: 650px; height: auto; position:relative; overflow: hidden;}
+  #pic_first img.pic2ImgCenter{display:block;margin:0 auto}
+  #anchor_left,#anchor_right{position:absolute;height:99999px;z-index:10;}
+  /*img anchor*/
+  #pic_first{ position:relative;}
+  
+  #anchor_left{width:325px; top:0; left:0; cursor:url("http://js.ooopic.com/image/weili/ooopicleftarrow.cur"),auto;}
+  #anchor_right{ width:325px; top:0; left:325px; cursor:url("http://js.ooopic.com/image/weili/ooopicrightarrow.cur"),auto;}
+
+  #anchor_left,#anchor_right{position:absolute;height:99999px;z-index:10;}
+  #ancho_left,#ancho_right{ position:absolute; height:56px; min-height:56px;_height:56px; z-index:10;display:block;}
+  #ancho1_left,#ancho1_right{ position:absolute; height:56px; min-height:56px;_height:56px; z-index:9;display:block;}
+  #ancho_left{width:38px; top:202px; left:0;background:black;background:url(http://js.ooopic.com/2015/image/newweil/prevnext.png) 4px -5px no-repeat;}
+  #ancho1_left{width:38px; top:202px; left:0;background:black;opacity:0.2;}
+  #ancho_right{ width:38px; top:202px; left:612px;background:url(http://js.ooopic.com/2015/image/newweil/prevnext.png) 4px -80px no-repeat;}
+  #ancho1_right{ width:38px; top:202px; left:612px;background:black;opacity:0.2;}
+  #ancho_left:hover,#ancho_right:hover{cursor:pointer;}
+  #ancho1_left:hover,#ancho1_right:hover{opacity:0.8;}
+
+
+  /*专题推荐*/
+   .ranking {width:1220px;margin:55px auto 0px;}
+  .ranking-m{width:1220px;margin:0 auto;font-family:'微软雅黑';}
+  .ranking .ranking-m .list{padding:15px 15px 10px 15px;background:#fff;box-shadow:0 0 3px rgba(0,0,0,.1);float:left;margin:0 10px 14px 0;width:202px;}
+  .ranking .ranking-m .list .list-img{position:relative;width:202px;overflow:hidden;}
+  .ranking .ranking-m .list .list-img img{transition:all .2s;}
+  .ranking .ranking-m .list .list-img img:hover{opacity:.8}
+  .ranking .ranking-m .list .list-info{padding:6px 0 0 0;}
+  .ranking .ranking-m .list .list-info p{line-height:30px;font-size:12px;}
+  .ranking .ranking-m .list .list-info p span{color:#f50000;}
+  .ranking .ranking-m .list .list-info p span.fr{color:#787878}
+  .ranking .ranking-m .list .list-info p a{display:block;width:203px;color:#333;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+  .ranking .ranking-m .list .list-info p a:hover{color:#090}
+  .list-down .download:hover{color:#fff;}
+  .ranking h3 {font-size: 22px; color: #484848;line-height: 24px;height: 48px;font-weight: normal;}
+  
+  .zhuantiBox{width:325px;margin-top:30px;margin-bottom:40px;}
+  .zhuantiBox .title{font-size: 14px; color: #5f5f5f; height: 30px; line-height: 30px;border: 0;}
+  .zhuantiBox .list{font-size: 14px;}
+  .zhuantiBox .list a{display:inline-block; height:26px; line-height:26px;font-size:14px;color:#9a9a9a;margin-right:8px;}
+  .zhuantiBox .list a:hover{color:#3AA631;}
+
+  /*猜你喜欢*/
+   .guess-youlike{padding:0px 0px 40px 0px;font-family:'微软雅黑';}
+   .clearfix:after {clear: both; content: ""; display: block; height: 0;}
+   #innerlinks { height: auto;margin-bottom: 0;overflow:hidden;}
+   #innerlinks ul { height: 100px;width: auto;}
+   #innerlinks ul div.linksDivStyele { margin-top:5px;}
+   #innerlinks ul div.linksDivStyele a {color: #969696;display: inline-block;line-height: 26px;height: 26px;margin-right: 15px;white-space: nowrap;}
+   #innerlinks ul div.linksDivStyele a:hover {color: #3aa631;}
+   .innerlinks_title span { display:inline-block;cursor: pointer;font-size:20px;height:44px; width:140px; line-height:40px;}
+   .innerlinks_title span.on {color: #3baf2f;}
+   .innerlinks_title span.off { color: #3baf2f;}
+
+   .w350{width:350px;margin-left:5px;}
+   .w317{width:317px;margin:0 auto}
+   .w351{margin-left:20px;}
+   #wrap .boxrightadd{width:380px;height:auto;}
+    .boxrightadd .userclass{margin-top:26px;font-size:14px;color:#555555;}
+   .boxrightadd .userclass .chongzhi{color:#278d06;}
+   .boxrightadd .userclass .chongzhi:hover{color:#3AA631;}
+   .boxrightadd .addiscount{margin-top:17px;font-family:'微软雅黑';line-height:25px;height:25px;}
+   .boxrightadd .reddiscount{width:80px;height:25px;line-height:25px;background:red;color:#fff;text-align:center;font-size:14px;}
+   .boxrightadd .reddiscountzi{color:red;height:25px;line-height:25px;width:100px;}
+   .boxrightadd .greendiscount{background:url('http://icon.ooopic.com/2015/image/newweil/weili_rewrite.png') no-repeat -89px -28px;padding-left:20px;padding-right:20px;width:80px;color:#278d06;}
+   .boxrightadd .greendiscount:hover{color:#3AA631;} 
+   .boxrightadd .banquan{color:#555555;}
+   .boxrightadd .zheikoujia{margin-top:20px;}
+   .boxrightadd .down-btn-buyche{width: 317px;height:50px;line-height:48px;margin-top:17px;}
+   .boxrightadd .bt_download{height: 48px; color:white; line-height:48px; border: 1px solid #179305; width: 1px; text-indent:0px; display: block;font-size:18px;background:#090;width:178px;}
+   .boxrightadd .bt_download span{color:white;}
+   .boxrightadd .bt_download .logodown{display:block;width:60px;height:48px;background:url('http://icon.ooopic.com/2015/image/newweil/weili_rewrite.png') no-repeat -4px -9px;}
+   .boxrightadd .bt_download .logodown:hover{display:block;width:60px;height:48px;background:url('http://icon.ooopic.com/2015/image/newweil/weili_rewrite.png') no-repeat -4px -9px;}
+   .boxrightadd .bt_download .logowen{display:block;width:110px;height:48px;)}
+   .boxrightadd .bt_download:hover, .bt_download span:hover{color:white;background:#3AA631;}
+   .boxrightadd .bt_che{background:#fec200;border: 1px solid #ebaa10;color:white; font-size:18px; cursor: pointer; width: 121px;display: block;height: 48px;line-height:48px;text-align: center;}
+   .boxrightadd .bt_che:hover{background:#ffcc32;color:white;text-decoration:none;}
+   .boxrightadd .downshare{height:58px;width:317px;margin-left:13px;}
+   .boxrightadd .downshare #dynamicInfo{width:317px;float:left;margin-top:18px;margin-bottom:30px;}
+   .boxrightadd .downshare .load{width:317px;float:left;margin-top:18px;margin-bottom:30px;}
+   .boxrightadd .zhenban{width:317px;height:93px;background:white;font-size:14px;background:#fff;box-shadow:0 0 3px rgba(0,0,0,.1);}
+   .boxrightadd .bz_zhengban,.bz_tuikuan,.bz_shouhou{float:left;margin:15px 24px 0 12px;display:inline}
+   .boxrightadd .bz_zhengban{width:56px;}
+   .boxrightadd .bz_tuikuan{width:94px;}
+   .boxrightadd .bz_shouhou{width:57px;}
+   .boxrightadd .bz_zhengban_bg,.bz_tuikuan_bg,.bz_shouhou_bg{width:25px;height:30px;margin:0 auto;}
+   .boxrightadd .bz_zhengban_bg{background:url("http://icon.ooopic.com/2015/image/newweil/weili_rewrite.png") no-repeat  -30px -83px;}
+   .boxrightadd .bz_tuikuan_bg{background:url("http://icon.ooopic.com/2015/image/newweil/weili_rewrite.png") no-repeat  -89px -83px;}
+   .boxrightadd .bz_shouhou_bg{background:url("http://icon.ooopic.com/2015/image/newweil/weili_rewrite.png") no-repeat  -149px -83px;}
+
+   .boxrightadd .pic_box{width:317px;height:auto;background:white;margin-top:15px;box-shadow:0 0 3px rgba(0,0,0,.1);}
+   .boxrightadd .pic_xx{height:72px;width:300px;line-height:72px;font-size:18px;padding-left:16px;border-bottom:1px solid #f3f3f3;}
+   .boxrightadd .pic_info{width:300px;height:auto;padding-left:16px;padding-bottom:10px;padding-top:10px;} 
+   .boxrightadd .pic_info li{width:300px;height:22px;margin-bottom:10px;overflow:hidden;font-size:14px;display:block;} 
+   .boxrightadd .ico_dujia{position:relative;padding-right:5px;padding-left:5px;padding-top:2px;padding-bottom:2px;text-align:center;color:white;background:#ff6633;border-radius:10px;line-height:19px;font-size:12px;}
+   .boxrightadd .author{width:317px;height:auto;background:white;font-size:14px;margin-top:10px;box-shadow:0 0 3px rgba(0,0,0,.1);padding:15px 0px;}
+   .boxrightadd .author .desgin_info{width:317px;height:49px;}
+   .boxrightadd .author .desgin_info .desgin_face{width:76px;height:49px;margin-left:20px;}
+   .boxrightadd .author .desgin_info .desgin_name{width:210px;height:49px;}
+   .boxrightadd .author .desgin_info .desgin_name .gototuku{display:block;width:210px;height:24px;margin-top:10px;color:#090;}
+   .boxrightadd .author .desgin_info .desgin_name .gototuku:hover{color:#3AA631;}
+   .boxrightadd .fenxiang{width:317px;height:35px;margin-top:10px;}
+   .boxrightadd .zhuanti{width:317px;min-height:45px;}
+
+/*举报按钮 */
+.report-but{ width: 86px;height:32px;margin: 24px 0 0 643px; }
+.report-but a{ display: block;height: 30px; line-height:30px;color:#5f5f5f; font-size: 14px;border:1px #dadada solid;border-radius: 2px;transition:all .2s; }
+.report-but a i{float: left; width: 19px;height: 15px; background: url(http://icon.ooopic.com/2015/image/weili/report-ico.png) 0 -70px;margin:7px 9px 0 13px; overflow: hidden;}
+.report-but a:hover{color:#090;border-color:#059b05;}
+.report-but a:hover i{ background-position: 0 -54px; }
+#report-win{ position: fixed;left: 0;top: 0; width: 100%;;z-index: 99999999999999;_position: absolute;_bottom: auto;_top:expression(eval(document.documentElement.scrollTop)); display: none;}
+#report-win .report-bg{ background:#000;filter:alpha(opacity=50);opacity: .3;height: 100%}
+#report-win .report-m{ width: 400px;height: 578px;position: absolute;left: 50%;top: 50%;margin:-290px 0 0 -201px; border:1px #e5e5e5 solid;background-color: #fafafa;}
+#report-win .report-m .head{height: 82px;line-height: 82px;border-bottom:1px #e5e5e5 solid;padding:0;}
+#report-win .report-m .head h3{color:#010101; font-size: 20px;text-indent: 44px; font-weight: normal;}
+#report-win .report-m .head .fr i{ width: 21px;height: 21px; background:url(http://icon.ooopic.com/2015/image/weili/report-ico.png); display: inline-block;margin:30px 35px  0 0;cursor: pointer;transition:all .2s;overflow: hidden; }
+#report-win .report-m .head .fr i:hover{transform: rotate(90deg)}
+#report-win .report-m .main ul{padding:25px 0 5px 48px;}
+#report-win .report-m .main ul li{height: 26px; line-height: 26px;cursor: pointer;margin-bottom: 20px; font-size: 16px;color:#686868;}
+#report-win .report-m .main ul li i{ width: 15px;height: 15px; background:url(http://icon.ooopic.com/2015/image/weili/report-ico.png) 0 -22px; float: left;margin:5px 34px 0 0; overflow: hidden;}
+#report-win .report-m .main ul li.on i{background-position: 0 -38px }
+#report-win .report-m .main .text{ width: 312px;height: 158px;margin:0 auto; }
+#report-win .report-m .main .text textarea{border-color: #e5e5e5; resize: none;outline: none; width: 280px;height: 136px;padding:10px 15px; font-size: 14px; line-height: 28px; font-family: "Microsoft Yahei"}
+#report-win .report-m .main .but{padding:23px 0 0 44px;}
+#report-win .report-m .main .but a{ display: inline-block;width: 129px;height: 38px; line-height: 38px;text-align: center; font-size: 18px;padding:0;transition:all .2s;}
+#report-win .report-m .main .but a.ok{border:1px #25901b solid;color:#fff;background:#42af39;background: linear-gradient(to bottom, #4ab841,#3aa631);}
+#report-win .report-m .main .but a.ok:hover{background: linear-gradient(to bottom, #3aa631,#2fa026);}
+#report-win .report-m .main .but a.close{background-color: #e0e0e0;border:1px #c9c9c9 solid;color:#818080;margin-left: 15px;}
+#report-win .report-m .main .but a.close:hover{background-color: #e3e3e3;}
+#wrap .boxleft .pic_keyword{margin-top: 12px;} 
+
+
+/***** 2016-2-11 浏览页新增 我图币&月卡币下载 ***/
+.month-card .month-card-link{color:#278d06;margin-left:30px;}
+.month-card .month-card-link:hover{color:#3AA631;}
+.coin-down-btn-buyche .coin_bt_download{height: 48px;color: white;line-height: 48px;border: 1px solid #179305;width: 1px;text-indent: 0px;display: block;font-size: 18px;background: #090;width: 146px;}
+
+.coin_bt_download .mianbilogodown{display: block;width: 39px;height: 48px;color:#fff;background: url('http://icon.ooopic.com/2015/image/newweil/weili_rewrite.png') no-repeat -12px -9px;}
+.coin_bt_download .wotublogodown{display: block;width: 39px;height: 48px;color:#fff;background: url('http://icon.ooopic.com/2015/image/newweil/weili_rewrite.png') no-repeat -20px -9px;}
+
+.coin_bt_download .logowen{display: block;width: 101px;height: 48px;color:#fff;}
+.coin-down-btn-buyche .month_coin_bt_download{width:156px;background:#da0000;border: 1px solid #be0000;}
+
+.coin_bt_download:hover, .coin_bt_download span:hover{color:white;background:#3AA631;}
+.mianbilogodown:hover{background: url('http://icon.ooopic.com/2015/image/newweil/weili_rewrite.png') no-repeat -12px -9px !important;}
+.wotublogodown:hover{background: url('http://icon.ooopic.com/2015/image/newweil/weili_rewrite.png') no-repeat -20px -9px !important;}
+.month_coin_bt_download:hover, .month_coin_bt_download span:hover{background:#be0000;} 
+
+/****** 开通免币区入口 ***/
+#open-button-box{ position:fixed; top:402px; right:0; right:1px; width:148px; height:206px; display:block;   z-index: 999999;_position:absolute;_top:expression(documentElement.scrollTop+445+"px");  }
+#open-button-box .open-button{ width:148px; height:206px; display:block;  }
+
+#rightButton{width:130px;display:block;height:auto;position:fixed;_position:absolute;_top:expression(documentElement.scrollTop+180+"px");right:0px;right:1px;top:216px;width:auto;z-index:999999;}
+
+
+
+
+

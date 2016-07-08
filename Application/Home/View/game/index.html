@@ -1,6 +1,8 @@
 
 <link  href="__CSS__/bootstrap.min.css" type="text/css"  rel="stylesheet" />
 <link  href="__CSS__/chat.css" type="text/css"  rel="stylesheet" />
+
+<script type="text/javascript" src="http://api.map.baidu.com/library/AreaRestriction/1.2/src/AreaRestriction_min.js"></script>
 <style>
     .main{background:url(__IMG__/indexImg/bg.png);}
     #container{height:80%}
@@ -8,7 +10,7 @@
 </head>
 <body class="main">
 <div  style="height: 100%">
-        <if condition="1 == 1">
+        <if condition="$leader == 1">
             <div id="container"></div>
 
             <script src="__JS__/chat.js"></script>
@@ -20,6 +22,17 @@
             <script>
                 $(function(){
                     touming("游戏已开始,请等待房主配置游戏参数",true);
+                    setInterval(function(){
+                        $.ajax({
+                            url:'checkStatus',
+                            success:function(data){
+                                data = JSON.parse(data);
+                                if(data.status == 1){
+                                    location.href="{:U('Game/game')}";
+                                }
+                            }
+                        });
+                    },1000);
                 })
             </script></if>
     </div>

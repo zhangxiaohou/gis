@@ -26,36 +26,27 @@
 </head>
 <body class="main">
 <div  style="height: 100%">
-        <?php if($leader == 1): ?><div id="container"></div>
+            <div id="container"></div>
+            <table class="infoDiv" style="width:100%;height: 20%">
+                <tr><td style="width: 80%">
+                    <div class="divchat" id="chatArea"></div>
+                </td><td style="width: 20%" >  <div class="infoDiv container" style="width: 100%;height:100%" id="infoArea">
+                    <div><img src="/gis/Application/Home/View/Public/img/time.jpg" style="height: 20px"/><span id="time"></span></div>
+                    <div> <img src="/gis/Application/Home/View/Public/img/hp.jpg" style="height: 20px"/><span id="hp">20</span>
+                    <div><img src="/gis/Application/Home/View/Public/img/attack.jpg" style="height:20px;width: 20px"/><span id="attack">1</span>
+                    <div><img src="/gis/Application/Home/View/Public/img/boom.jpg" style="height: 20px"/><span id="gain" >0/0/0</span>
 
-            <script src="/gis/Application/Home/View/Public/js/chat.js"></script>
-            <div class="divchat" id="chatArea"></div>
-            <div class="infoDiv" id="infoArea">
-                开始地点坐标:<span id="startPoint">(0,0)</span>
-            </div>
-            <?php else: ?>
+                </div> </td></tr>
+            </table>
+
+
             <script>
-                $(function(){
-                    touming("游戏已开始,请等待房主配置游戏参数",true);
-                    setInterval(function(){
-                        $.ajax({
-                            url:'checkStatus',
-                            success:function(data){
-                                data = JSON.parse(data);
-                                if(data.status == 1){
-                                    location.href="<?php echo U('Game/game');?>";
-                                }
-                            }
-                        });
-                    },1000);
-                })
-            </script><?php endif; ?>
+            </script>
     </div>
 <script>
-    $(function(){
-
-    })
+    var imgSrc = "/gis/Application/Home/View/Public/img";
 </script>
+<script src="/gis/Application/Home/View/Public/js/game.js"></script>
 
 </body>
 </html>

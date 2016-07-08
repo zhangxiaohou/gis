@@ -48,7 +48,8 @@
             </div>
         </div>
         <div class='login_fields__submit'>
-            <input type='submit' value='登入'>
+            <input type='submit' value='登入'><br><br>
+            <input type='button' value='已加入游戏,重登'>
         </div>
     </div>
     <div class='success'>
@@ -65,49 +66,89 @@
 
 <script type="text/javascript" src='/gis/Application/Home/View/Public/js/login/stopExecutionOnTimeout.js'></script>
 <script>
+    function checkForm(){
+     if($("#name").val() == ''){
+            touming("请输入您的昵称");
+            return false;
+          }
+          if($("#roomId").val() == ''){
+            touming("请输入您想加入/创建的房间号");
+            return false;
+          }
+          if(isNaN($("#roomId").val())){
+            touming("房间号必须为数字，请输入正确格式的房间号");
+            return false;
+          }
+    }
+    function formAnimate(){
+     $('.login').addClass('test');
+            setTimeout(function () {
+                $('.login').addClass('testtwo');
+            }, 300);
+            setTimeout(function () {
+                $('.authent').show().animate({ right: -320 }, {
+                    duration: 600,
+                    queue: false
+                });
+                $('.authent').animate({ opacity: 1 }, {
+                    duration: 200,
+                    queue: false
+                }).addClass('visible');
+            }, 100);
+            setTimeout(function () {
+                $('.authent').show().animate({ right: 90 }, {
+                    duration: 600,
+                    queue: false
+                });
+                $('.authent').animate({ opacity: 0 }, {
+                    duration: 200,
+                    queue: false
+                }).addClass('visible');
+                $('.login').removeClass('testtwo');
+            }, 1000);
+    }
+    $("input[type='button']").click(function(){
+        checkForm();
+        formAnimate();
+        $.ajax({
+        		        url:'reLogin',
+        		        data:{
+        			          'name':$("#name").val(),
+                              'roomId':$("#roomId").val()
+        		        },
+        		        type:'post',
+        		        success:function(data){
+                        if(data == "0"){
+                            touming("您的昵称在该房间内不存在");
+                            setTimeout(function () {
+                                location.reload();
+                            }, 1000);
+                        }else if(data == "1"){
+                            touming("您选择的房间不存在");
+                            setTimeout(function () {
+                               location.reload();
+                            }, 1000);
+                        }
+                        else{
+                            $('.login').removeClass('test');
+                            $('.login div').fadeOut(123);
+                            $('.success').fadeIn();
+                            setTimeout(function () {
+                                location.href = data;
+                            }, 1000);
+                        }
+
+        		        }
+        	      });
+    });
     $('input[type="submit"]').click(function () {
-      if($("#name").val() == ''){
-        touming("请输入您的昵称");
-        return false;
-      }
-      if($("#roomId").val() == ''){
-        touming("请输入您想加入/创建的房间号");
-        return false;
-      }
-      if(isNaN($("#roomId").val())){
-        touming("房间号必须为数字，请输入正确格式的房间号");
-        return false;
-      }
-        $('.login').addClass('test');
-        setTimeout(function () {
-            $('.login').addClass('testtwo');
-        }, 300);
-        setTimeout(function () {
-            $('.authent').show().animate({ right: -320 }, {
-                duration: 600,
-                queue: false
-            });
-            $('.authent').animate({ opacity: 1 }, {
-                duration: 200,
-                queue: false
-            }).addClass('visible');
-        }, 100);
-        setTimeout(function () {
-            $('.authent').show().animate({ right: 90 }, {
-                duration: 600,
-                queue: false
-            });
-            $('.authent').animate({ opacity: 0 }, {
-                duration: 200,
-                queue: false
-            }).addClass('visible');
-            $('.login').removeClass('testtwo');
-        }, 1000);
+        checkForm();
+        formAnimate();
         $.ajax({
 		        url:'loginIn',
 		        data:{
 			          'name':$("#name").val(),
-                'roomId':$("#roomId").val()
+                      'roomId':$("#roomId").val()
 		        },
 		        type:'post',
 		        success:function(data){
@@ -136,6 +177,7 @@
 		        }
 	      });
     });
+
     $('input[type="text"],input[type="password"]').focus(function () {
         $(this).prev().animate({ 'opacity': '1' }, 200);
     });

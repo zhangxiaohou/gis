@@ -1,0 +1,23 @@
+#header{min-width:1200px;background:#fff;border-bottom:1px #e2e2e2 solid;box-shadow:0 0 2px 1px #e2e2e2;margin-bottom:1px;}
+.head{margin:0 auto;padding-top:37px;height:78px;_overflow:hidden;padding-bottom:25px;}
+.head .logo{width:406px;height:46px;}
+.head .logo a{width:316px;height:46px;display:block;}
+.search{margin-left:60px;}
+.search .searchbar{width:720px;background:#090;height:48px;line-height:48px;position:relative;z-index:12}
+.searchbar .btn-select-search{width:107px;height:44px;background:#f5f5f5;margin:2px 0 0 2px;position:relative;_margin:2px 0 0 1px}
+.searchbar .btn-select-search i{position:absolute;height:7px;width:11px;top:18px;right:18px;}
+.searchbar .btn-select-search .current-select{cursor: pointer;color:#000000;font-family:"Î¢ÈíÑÅºÚ";text-indent:18px;line-height:44px;height:44px;border-bottom:2px #090 solid;}
+.searchbar #topkeyword{width:330px;height:44px;line-height:44px;padding:0 10px;border:0;margin-top:2px;outline:none;font-size:14px;font-family:"Î¢ÈíÑÅºÚ"}
+.searchbar .select-list{width:108px;border-top:1px #e5e5e5 solid;border-bottom:1px #e5e5e5 solid;background:#fff;position:absolute;left:-1px;top:44px;display:none;z-index:10;overflow:hidden;}
+.searchbar .select-list a{display:block;height:32px;line-height:32px;color:#888;text-align:left;padding-left:26px;border-left:1px #e5e5e5 solid;border-right:1px #e5e5e5 solid;font-family:"Î¢ÈíÑÅºÚ"}
+.searchbar .select-list a:hover{background:#090;border-color:#090;color:#fff;}
+.select-list a.active{display:none;}
+.search .search-tags{width:539px;overflow:hidden;height:34px;margin-left:15px;line-height:34px;}
+.search .search-tags a{font-family:"Î¢ÈíÑÅºÚ";font-size:12px;display:inline;float:left;margin-right:14px;color:#a9a9a9;}
+.search .search-tags a:hover{color:#3AA631;}
+.search #searchbutton{width:130px;height:47px;line-height:47px;font-size:18px;text-align:center;color:#fff;background:#090;border:none;font-family:"Î¢ÈíÑÅºÚ";cursor:pointer;transition:all .2s;}
+.search #searchbutton:hover{background:#03a003;}
+.search .search-all{width:131px;height:48px;background:white;}
+.search #soall{width:123px;height:48px;background:#090;margin-left:8px;border:none;color:white;font-size:18px;font-family:'Î¢ÈíÑÅºÚ';}
+.topkeywordlist{top:48px;left:0;width:587px;}
+.sokeyup_2{width:75%;}

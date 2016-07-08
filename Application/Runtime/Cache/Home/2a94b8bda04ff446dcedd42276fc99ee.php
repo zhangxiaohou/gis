@@ -33,7 +33,7 @@
             <td >蓝方
             </td>
         </tr>
-        <?php $__FOR_START_1036509514__=0;$__FOR_END_1036509514__=5;for($i=$__FOR_START_1036509514__;$i < $__FOR_END_1036509514__;$i+=1){ ?><tr class="team">
+        <?php $__FOR_START_596569639__=0;$__FOR_END_596569639__=5;for($i=$__FOR_START_596569639__;$i < $__FOR_END_596569639__;$i+=1){ ?><tr class="team">
                 <td class="red">
                    &nbsp; <?php if($red[$i]): echo ($red[$i][name]); endif; ?>
                 </td>

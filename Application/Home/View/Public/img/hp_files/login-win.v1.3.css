@@ -1,0 +1,66 @@
+/* -------- base -- */
+a{transition:all .2s;}
+
+/*----------“ı”∞øÚ*/
+.xu_btn{display:none;}
+.fleft{ float:left;}
+.fright{ float:right;}
+#nologin{
+	width:100%;height:100%;min-height:550px;
+	overflow:hidden;zoom:1;
+	position:absolute;
+	top:0;left:0;
+	z-index:100000001;
+	background-color:#000000;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+	display:none;
+}
+/* -------- header -- */
+.login-win{width:625px; background: #fff;margin-top:10px;}
+.login-win a{font-size:13px}
+.login-wrap .login-tips{color:red;text-align:right;font-size:12px;line-height:30px;}
+.login-win .login-t{height:80px;border-bottom:4px #4fac32 solid; line-height: 80px;}
+.login-win .login-t h2{ font-size: 24px; text-indent: 43px;color:#090; font-weight: normal;}
+.login-win .login-t .fright{padding-right:33px; font-size: 16px;}
+.login-win .login-t .fright a{color:#090;}
+.login-win .login-t .fright a:hover{ color:#00b300;}
+/* -------- login-in -- */
+.login-in{padding:0 30px;}
+.login-in .login-qq,.login-in .main-login{width:168px;margin:32px 25px 0 0; display: inline;}
+.login-in .login-qq dt,.login-in .main-login dt{width: 168px;height:172px; background: url(http://icon.ooopic.com/images/user/login-ico.v1.1.png) no-repeat -16px -29px;transition:all .2s;}
+.login-in .main-login dt{background-position: -500px -33px;}
+.login-in .login-qq dt a,.login-in .main-login dt a{ display: block;height:172px;}
+.login-in .login-qq dt:hover,.login-in .main-login dt:hover{opacity: .9; }
+.login-in .login-qq dd,.login-in .main-login dd{line-height:42px;text-align:center;margin:0;}
+.login-in .login-qq dd a,.login-in .main-login dd a{font-size:16px;}
+.login-box{width:286px;margin:35px 0 0 25px;}
+.login-wrap{position: relative; margin-bottom: 8px;width:270px}
+.login-wrap.error{width:268px;display:none;background:#fffae1;border:1px solid #dcdcdc;padding:11px 0 15px 0;text-align:center;}
+.login-wrap.error i{background:url(http://icon.ooopic.com/images/user/login-ico.v1.1.png) no-repeat -234px -114px;width:19px;height:19px;display:inline-block;margin:0 15px 0 0;position:relative;top:4px;}
+.login-wrap.error i.moretext{top:-1px;}
+.login-wrap.error span.moretext{width: 220px;position:relative;display:inline-block;font-size:12px;text-align:left;}
+.login-label{position: absolute; top: 15px; left: 15px; font-size: 14px; color: #8d8d8d; }
+.login-input, .login-btn, .login-loading{    height: 44px;     line-height:44px;     font-size: 14px;     padding: 0;     margin: 0;     border: 0; 
+    left: 0;    font-family:"Œ¢»Ì—≈∫⁄", "Microsoft YaHei", "ÀŒÃÂ";}
+.login-input{color: #8d8d8d; padding-left: 15px; border: 1px #ccc solid; width:255px;height:45px;border-radius: 2px;outline: none;transition:all .2s;}
+.login-input:focus{border:1px #090 solid;}
+.login-btn{background: #090; text-align: center;width: 100%; color: #FFF;cursor: pointer; position: relative; font-size: 16px;transition:all .2s;border-radius: 2px}
+.login-btn-hover{ opacity: .9}
+.login-loading{background: #090; text-align: center; color: #FFF; width: 100%; position: absolute; top: 0; left: 0; z-index: 10; display: none;border-radius: 2px}
+.login-status{padding:10px 0 12px 0;height:29px;position: relative;}
+.login-status .fright a{color:#090;}
+.login-status .login-error{height:34px; line-height: 34px; background: #fffae1;border:1px #dcdcdc solid; position: absolute;left:0;top:0; font-size: 12px;color:#757575; width: 284px; display: none}
+.login-status .login-error i{ float: left;display: inline;width:19px;height:19px; background: url(http://icon.ooopic.com/images/user/login-ico.v1.1.png) no-repeat -234px -114px;margin:8px 7px 0 49px;}
+/* -------- footer -- */
+.other-login{width:570px;height:84px;margin:48px auto 0;}
+.other-login .other-login-t{height:14px;  text-align: center; border-top:1px #e0e0e0 solid;}
+.other-login h3{ font-size: 14px;color:#8b8b8b;font-weight: normal; display: inline-block;background: #fff;position: relative;margin-top:-7px;line-height: 16px; width: 120px;}
+.other-login .qita-login{ display: table;margin:12px auto 0;height:32px; line-height: 32px;}
+.other-login .qita-login a{margin:0 25px; display: inline;float: left;}
+.other-login .qita-login a i{ background: url(http://icon.ooopic.com/images/user/login-ico.v1.1.png) no-repeat;width:32px;height:32px; display: inline; float: left;padding-right:16px;}
+.other-login .qita-login a:hover i{ opacity: .9}
+.other-login .qita-login .wx i{ background-position:-221px -160px }
+.other-login .qita-login .sina i{ background-position:-294px -160px }
+.other-login .qita-login .ooopic i{ background-position:-437px -160px }
+.other-login .qita-login .ooopicqy i{ background-position:-367px -160px }
